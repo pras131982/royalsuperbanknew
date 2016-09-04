@@ -12,7 +12,7 @@
 <jsp:useBean id="login" class="sample.bank.bean.Login" scope="session" />
 
 
-<FORM action="Bank" method="post" >
+<FORM action="RoyalBank" method="post" >
 
 
 <b>Welcome to the sample Bank Corporation</b><BR>

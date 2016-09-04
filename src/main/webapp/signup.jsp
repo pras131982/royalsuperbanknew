@@ -19,7 +19,7 @@
 
 <jsp:useBean id="addCustomer" class="sample.bank.bean.CustomerBean" scope="session" />
 
-<form action="Bank" method="post">
+<form action="RoyalBank" method="post">
 <TABLE border="0" cellpadding="0" cellspacing="0" width="653"
 	height="125">
 	<TBODY>

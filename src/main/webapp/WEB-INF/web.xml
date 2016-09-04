@@ -15,5 +15,15 @@
                   <url-pattern>/health</url-pattern>
          </servlet-mapping>
          
+          <servlet>
+  <display-name>RoyalBank</display-name>
+  <servlet-name>RoyalBank</servlet-name>
+  <servlet-class>sample.bank.servlets.RoyalBank</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>RoyalBank</servlet-name>
+  <url-pattern>/RoyalBank</url-pattern>
+ </servlet-mapping>
 </web-app>
 

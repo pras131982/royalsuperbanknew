@@ -19,14 +19,9 @@ public class CustomerMongoDB {
 
 			/**** Connect to MongoDB ****/
 			// Since 2.10.0, uses MongoClient
-			//MongoClient mongo = new MongoClient("localhost", 27017);
-			//MongoClient mongo = new MongoClient("mongodb:\\$OPENSHIFT_MONGODB_DB_HOST:\\$OPENSHIFT_MONGODB_DB_PORT");
-			//MongoClient mongo = new MongoClient("mongodb:\\admin:MSbB19lPSQsU@583aedf889f5cff7ad000083-prasdev.rhcloud.com:37811/");
-			//MongoClient mongo = new MongoClient("admin:MSbB19lPSQsU@583aedf889f5cff7ad000083-prasdev.rhcloud.com", 37811);
-			//MongoClient mongo = new MongoClient(System.getenv("OPENSHIFT_MONGODB_DB_URL"));
 			//MongoClient mongo = new MongoClient("583aedf889f5cff7ad000083-prasdev.rhcloud.com", 37811);
-			//MongoClient mongo = new MongoClient(System.getenv("OPENSHIFT_MONGODB_DB_HOST") , Integer.parseInt(System.getenv("OPENSHIFT_MONGODB_DB_PORT")));
-			MongoClient mongo = new MongoClient("mongodb:583aedf889f5cff7ad000083-prasdev.rhcloud.com:37811/");
+			MongoClient mongo = new MongoClient(System.getenv("OPENSHIFT_MONGODB_DB_HOST") , Integer.parseInt(System.getenv("OPENSHIFT_MONGODB_DB_PORT")));
+
 			/**** Get database ****/
 			// if database doesn't exists, MongoDB will create it for you
 			DB db = mongo.getDB("royalsuperbank");

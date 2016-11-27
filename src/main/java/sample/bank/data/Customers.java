@@ -4,13 +4,6 @@ import java.util.HashMap;
 
 import sample.bank.bean.CustomerBean;
 
-
-
-
-
-
-
-
 public class Customers {
 	
 	private HashMap customers = new HashMap();

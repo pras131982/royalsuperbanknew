@@ -25,5 +25,15 @@
   <servlet-name>RoyalBank</servlet-name>
   <url-pattern>/RoyalBank</url-pattern>
  </servlet-mapping>
+ 
+  <servlet>
+		<display-name>SendFacebookNotification</display-name>
+		<servlet-name>SendFacebookNotification</servlet-name>
+		<servlet-class>sample.bank.servlets.SendFacebookNotification</servlet-class>
+</servlet>
+ <servlet-mapping>
+  <servlet-name>SendFacebookNotification</servlet-name>
+  <url-pattern>/SendFacebookNotification</url-pattern>
+ </servlet-mapping>
 </web-app>
 

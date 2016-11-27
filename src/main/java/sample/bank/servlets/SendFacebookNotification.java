@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -83,10 +84,12 @@ public class SendFacebookNotification extends HttpServlet {
 		
 		request.getSession().setAttribute("faceBookId", faceBookId);
 
-		PrintWriter out = response.getWriter();
+/*		PrintWriter out = response.getWriter();
 		out.println("<HTML>\n" + "<HEAD><TITLE>Hello</TITLE></HEAD>\n" + "<BODY>\n" + "<H1> Successfully Notification sent on"
 				+ " FaceBook Id. To log-in, please click  <A href='first.jsp'><I>here</I></A> </H1>\n" 
-				+ "</BODY></HTML>");
+				+ "</BODY></HTML>");*/
+		RequestDispatcher rd = request.getRequestDispatcher("/NotificationSuccess.jsp");
+		rd.forward(request, response);
 	}
 
 	private String getAccessToken(String code) {

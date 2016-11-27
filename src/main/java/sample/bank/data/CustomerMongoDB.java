@@ -43,13 +43,20 @@ public class CustomerMongoDB {
 			table.insert(document);
 
 			/**** Find and display ****/
+			
+		    DBCursor cursor = table.find();
+		    while(cursor.hasNext()) {
+		        System.out.println(cursor.next());
+		    }
+		    
+		    
 			BasicDBObject searchQuery = new BasicDBObject();
 			searchQuery.put("userId", "pras");
 
-			DBCursor cursor = table.find(searchQuery);
+			DBCursor cursor1 = table.find(searchQuery);
 
-			while (cursor.hasNext()) {
-				System.out.println(cursor.next());
+			while (cursor1.hasNext()) {
+				System.out.println(cursor1.next());
 			}
 
 			/**** Update ****//*

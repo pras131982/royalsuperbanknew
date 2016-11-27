@@ -94,7 +94,7 @@ public class SendFacebookNotification extends HttpServlet {
 
 		try {
 			String g = "https://graph.facebook.com/oauth/access_token?client_id=646657215481679&redirect_uri="
-					+ URLEncoder.encode("http://royalbank.mybluemix.net/RoyalBank/SendFacebookNotification", "UTF-8")
+					+ URLEncoder.encode("http://royalsuperbank-prasdev.rhcloud.com/SendFacebookNotification", "UTF-8")
 					+ "&client_secret=34d72b3016774ab86a08e12eed1ec91f&code=" + code;
 			URL u = new URL(g);
 			URLConnection c = u.openConnection();

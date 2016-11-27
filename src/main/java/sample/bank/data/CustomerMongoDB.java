@@ -20,7 +20,7 @@ public class CustomerMongoDB {
 			/**** Connect to MongoDB ****/
 			// Since 2.10.0, uses MongoClient
 			//MongoClient mongo = new MongoClient("localhost", 27017);
-			MongoClient mongo = new MongoClient("mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT");
+			MongoClient mongo = new MongoClient("mongodb:\\$OPENSHIFT_MONGODB_DB_HOST:\\$OPENSHIFT_MONGODB_DB_PORT");
 
 			/**** Get database ****/
 			// if database doesn't exists, MongoDB will create it for you

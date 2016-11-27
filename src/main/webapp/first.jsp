@@ -57,7 +57,7 @@ String facebookId = (String)request.getSession().getAttribute("faceBookId");
 if(facebookId == null){
 
 %>
-<i> To use Facebook Id  click <a href ="https://www.facebook.com/dialog/oauth?client_id=646657215481679&redirect_uri=http://royalsuperbank-prasdev.rhcloud.com/RoyalBank/SendFacebookNotification"> here </a></i>
+<i> To use Facebook Id  click <a href ="https://www.facebook.com/dialog/oauth?client_id=646657215481679&redirect_uri=http://royalsuperbank-prasdev.rhcloud.com/SendFacebookNotification"> here </a></i>
 <%} else{ %>
 
 <i>Hello <%=request.getSession().getAttribute("name") %> ,You will receive notifications from our App.Like us on Facebook. </i>

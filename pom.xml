@@ -85,11 +85,6 @@ jboss-eap-*-maven-repository/org/jboss/spec/jboss-javaee-6.0
 						<configuration>
 							<outputDirectory>deployments</outputDirectory>
 							<warName>RoyalBank</warName>
-							 <modules>
-             					<webModule>
-              						  <contextRoot>/RoyalBank</contextRoot>
-            					 </webModule>
-          					</modules>
 						</configuration>
 					</plugin>
 				</plugins>

@@ -11,6 +11,7 @@ public class Customers {
 	public void addCustomers(String userId, CustomerBean customer){
 		try{
 		customers.put(userId, customer);
+		new CustomerMongoDB().addRecord(userId, customer);
 		}
 		catch(Exception e){
 			e.printStackTrace();

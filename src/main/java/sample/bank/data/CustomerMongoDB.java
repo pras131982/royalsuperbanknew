@@ -133,7 +133,7 @@ public class CustomerMongoDB {
 				customer.setUserId((String) bd.get("userId"));
 				customer.setPassword((String) bd.get("password"));
 				customer.setAddress((String) bd.get("address"));
-				customer.setAccountBalance((Float) bd.get("openingBalance"));
+				customer.setAccountBalance(Float.parseFloat((String) bd.get("openingBalance")));
 			}
 
 		

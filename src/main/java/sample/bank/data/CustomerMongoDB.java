@@ -23,7 +23,7 @@ public class CustomerMongoDB {
 			//MongoClient mongo = new MongoClient("583aedf889f5cff7ad000083-prasdev.rhcloud.com", 37811);
 			MongoClient mongo = new MongoClient(System.getenv("OPENSHIFT_MONGODB_DB_HOST") , Integer.parseInt(System.getenv("OPENSHIFT_MONGODB_DB_PORT")));
 
-			/**** Get database ****/
+			/*** Get database ***/
 			// if database doesn't exists, MongoDB will create it for you
 			DB db = mongo.getDB("royalsuperbank");
 			
